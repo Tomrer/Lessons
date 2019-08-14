@@ -3,45 +3,45 @@
   align-items: center;
   min-height: 800px;
   position: relative;
-}
 
-.about-us .container {
-  display: flex;
-  justify-content: flex-end;
-}
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.about-us .about-us__bg {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  &__bg {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-.about-us .about-us__bg img {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
+    img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-.about-us .about-us__wrapper {
-  position: relative;
-  z-index: 1;
-  max-width: 50%;
-  margin-right: 75px;
-}
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 50%;
+    margin-right: 75px;
 
-.about-us .about-us__wrapper h2,
-.about-us .about-us__wrapper p {
-  color: white;
-}
+    h2,
+    p {
+      color: white;
+    }
 
-.about-us .about-us__wrapper h2 {
-  font-size: 36px;
-}
-
-.about-us .about-us__wrapper p {
-  font-size: 18px;
-  line-height: 1.5em;
+    h2 {
+      font-size: 36px;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.5em;
+    }
+  }
 }
