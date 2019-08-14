@@ -1,0 +1,20 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+    background: url(../img/first_bg.png) center center no-repeat;
+}
+  
+.hero .container {
+    display: flex;
+    justify-content: center;
+}
+  
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+}

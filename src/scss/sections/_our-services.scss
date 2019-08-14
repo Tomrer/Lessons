@@ -1,0 +1,26 @@
+.our-services {
+  min-height: 800px;
+  background: url(../img/services_bg.png) center center no-repeat;
+}
+
+.active-plate {
+  position: relative;
+  text-align: center;
+  margin: 11px;
+}
+
+.center-text {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  max-width: 300px;
+}
+
+.plate {
+  display: flex;
+  margin: 11px;
+}
+
+.text-plate {
+  padding: 50px 0 0 30px;
+}
