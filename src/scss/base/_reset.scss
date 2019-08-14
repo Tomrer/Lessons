@@ -168,7 +168,7 @@ form {
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
+    border: 1px solid $color-1;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }
@@ -356,6 +356,6 @@ textarea {
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: black;
     padding: 0.2em 0;
 }
