@@ -1,0 +1,51 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "prefer-const": ["error", {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+        }],
+        "no-unused-vars": ["error", { 
+            "varsIgnorePattern": "[iI]gnored" 
+        }],
+        "semi": ["error", "always"],
+        "semi-style": ["error", "last"],
+        "sort-imports": ["error", {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+        }],
+        "object-curly-spacing": ["error", "always"],
+        "operator-linebreak": ["error", "before"],
+        "no-useless-return": 0,
+        "no-unneeded-ternary": 0,
+        "no-mixed-operators": 0,
+        "import/no-duplicates": 0,
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "quote-props": 0
+    }
+}
+
