@@ -10,10 +10,11 @@ module.exports = {
         filename: 'js/bundle.js'
     },
 
-    devtool: "source-map",
+    devtool: 'source-map',
 
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.js$/,
                 use: 'babel-loader'
             },
@@ -43,8 +44,8 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: 'img/[name].[ext]',
-                        publicPath: function(url) {
-                            return url.replace('img/', '../img/')
+                        publicPath: function (url) {
+                            return url.replace('img/', '../img/');
                         }
                     }
                 }]
