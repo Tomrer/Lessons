@@ -1,45 +1,42 @@
-const path = require("path");
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: [
-        "./src/js/index.js"
-    ],
+    entry: './src/js/index.js',
+
     output: {
-        filename: "./js/bundle.js"
+        path: path.resolve('dist'),
+        filename: 'js/bundle.js'
     },
-    devtool: "source-map",
+
+    devtool: 'source-map',
+
     module: {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
-                include: path.resolve(__dirname, "src/js"),
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: "env"
-                    }
-                }
+                use: 'babel-loader'
             },
             {
-                test: /\.scss$/,
+                test: /\.s?css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader']
-                })
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: 'fonts/[name].[ext]',
-                        publicPath: function(url) {
-                            return url.replace('fonts/', '../fonts/')
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: true
+                            }
                         },
-                    }
-                }]
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        }
+                    ]
+                })
             },
             {
                 test: /\.(jpeg|jpg|png|gif|svg)$/,
@@ -47,8 +44,8 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         name: 'img/[name].[ext]',
-                        publicPath: function(url) {
-                            return url.replace('img/', '../img/')
+                        publicPath: function (url) {
+                            return url.replace('img/', '../img/');
                         }
                     }
                 }]
@@ -57,6 +54,7 @@ module.exports = {
     },
 
     plugins: [
+        new CleanWebpackPlugin(),
         new ExtractTextPlugin('css/styles.css')
     ]
 };
