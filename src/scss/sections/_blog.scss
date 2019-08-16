@@ -41,7 +41,7 @@
     }
 
     &-cont {
-      color: #333;
+      color: $light-black;
 
       h3, span {
         display: inline-block;
@@ -56,7 +56,7 @@
   .news {
     &-plate {
       position: relative;
-      color: #333;
+      color: $light-black;
       max-height: 166px;
 
       img {
