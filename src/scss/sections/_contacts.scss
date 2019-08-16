@@ -1,80 +1,79 @@
 .contact-us {
   min-height: 800px;
   background: url(../img/contact_bg.png) center center no-repeat;
-}
 
-.contact-us .section__header {
-  color: white;
-}
 
-.contact-us .flex-wrap{
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 101px;
-}
+  .section__header {
+    color: white;
+  }
 
-.form {
-  width: 440px;
-  max-height: 404px;
-}
+  .flex-wrap {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 101px;
+  }
 
-.form input[type=text]:focus {
-  border: 2px solid red;
-}
+  .form {
+    width: 440px;
+    max-height: 404px;
 
-.form input[type=text] {
-  width: 100%;
-  height:  40px;
-  background: transparent;
-  border: 1px solid #989594;
-  padding: 0 0 0 20px;
-}
+    input[type=text] {
+      width: 100%;
+      height: 40px;
+      background: transparent;
+      border: 1px solid #989594;
+      padding: 0 0 0 20px;
 
-.form select {
-  width: 100%;
-  height: 40px;
-  background: transparent;
-  border: 1px solid #989594;
-  padding: 0 0 0 15px;
-}
+      &:focus {
+        border: 2px solid red;
+      }
+    }
 
-.form textarea {
-  width: 100%; 
-  height: 190px;
-  background: transparent;
-  padding: 10px 0 0 20px;
-  resize: none;
-}
+    select {
+      width: 100%;
+      height: 40px;
+      background: transparent;
+      border: 1px solid #989594;
+      padding: 0 0 0 15px;
+    }
 
-.form p {
-  padding: 0 0 15px 0;
-}
+    textarea {
+      width: 100%;
+      height: 190px;
+      background: transparent;
+      padding: 10px 0 0 20px;
+      resize: none;
+    }
 
-.form p:first-child {
-  margin: 0 0 15px 0;
-}
+    button {
+      width: 156px;
+      height: 40px;
+      border: none;
+      color: white;
 
-.form p:nth-child(4) {
-  margin: 0;
-}
-.form-submit {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+      &:hover {
+        color: #333;
+        background: white;
+      }
+    }
 
-.form-submit p {
-  padding: 0;
-}
+    p {
+      padding: 0 0 15px 0;
 
-.form button {
-  width: 156px;
-  height: 40px;
-  border: none;
-  color: white;
-}
+      &:first-child,
+      &:nth-child(4) {
+        margin: 0 0 15px 0;
+      }
+    }
 
-.form button:hover {
-  color: #333;
-  background: white;
+    &-submit {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      & p {
+        padding: 0;
+      }
+    }
+  }
 }
