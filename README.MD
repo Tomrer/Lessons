@@ -1,2 +1,7 @@
-*npm i*
-*npm run dev*
+***
+### For Deploying project
+
+```
+npm i
+npm run dev
+```
