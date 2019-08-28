@@ -8,6 +8,8 @@
   }
 
   &-menu {
+    line-height: 1.8;
+
     ul {
       li {
         list-style: none;
@@ -28,11 +30,13 @@
   .social {
     display: flex;
     justify-content: space-evenly;
-    width: 25%;
+    width: 19%;
   }
 
   .copyright {
     text-align: right;
+    line-height: 2.3;
+    color: white;
 
     a {
       text-decoration: none;
