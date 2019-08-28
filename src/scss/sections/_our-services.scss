@@ -1,6 +1,7 @@
 .our-services {
   min-height: 800px;
   background: url(../img/services_bg.png) center center no-repeat;
+  background-size: cover;
 
   .flex-wrap {
     flex-wrap: wrap;
@@ -14,6 +15,10 @@
     padding: 0 11px;
     margin-bottom: 22px;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
 
     &__img,
     &__text {
@@ -55,6 +60,10 @@
         margin: 0 auto;
         max-width: 330px;
         line-height: 1.4em;
+
+        @media (max-width: 1024px) {
+          max-width: 500px;
+        }
       }
     }
 
