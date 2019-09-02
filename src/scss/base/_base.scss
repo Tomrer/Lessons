@@ -34,10 +34,13 @@ body {
   &__header {
     text-align: center;
     padding: 40px 0 30px 0;
+    width: 50%;
+    margin: 0 auto;
 
     h2 {
       font-size: 36px;
       margin-top: 0;
+      padding-bottom: 20px;
     }
 
     p {
