@@ -54,6 +54,8 @@
       height: 40px;
       border: none;
       color: white;
+      background-color: $dark-blue;
+      transition: background .3s ease-in;
 
       &:hover {
         color: $light-black;

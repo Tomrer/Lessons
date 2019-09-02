@@ -91,6 +91,12 @@
       }
 
       width: 100%;
+      transition: background .3s ease-in;
+
+      
+      &:hover {
+        background: $light-blue;
+      }
 
       &__1 {
         background-image: url(../img/news_active.png);
