@@ -1,10 +1,15 @@
 .our-services {
   min-height: 800px;
   background: url(../img/services_bg.png) center center no-repeat;
+  background-size: cover;
 
   .flex-wrap {
     flex-wrap: wrap;
     margin: 0 -11px;
+
+    @media (max-width: 1024px) {
+      flex-flow: column;
+    }
   }
 
   .plate {
@@ -14,6 +19,10 @@
     padding: 0 11px;
     margin-bottom: 22px;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
 
     &__img,
     &__text {
@@ -68,6 +77,10 @@
     &:hover {
       .plate__img {
         width: 0;
+
+        @media (max-width: 1024px) {
+          max-width: 50%;
+        }
 
       }
 
