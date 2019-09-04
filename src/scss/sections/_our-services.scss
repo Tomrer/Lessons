@@ -1,6 +1,7 @@
 .our-services {
   min-height: 800px;
   background: url(../img/services_bg.png) center center no-repeat;
+  background-size: cover;
 
   .flex-wrap {
     flex-wrap: wrap;
@@ -81,6 +82,24 @@
           span {
             transform: translateX(-50%);
           }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    
+    .flex-wrap {
+      flex-flow: column;
+    }
+
+    .plate {
+      width: 100%;
+
+      &__text:hover {
+
+        & p {
+          max-width: 50%;
         }
       }
     }
