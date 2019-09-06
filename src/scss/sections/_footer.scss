@@ -21,6 +21,10 @@
             @media (max-width: 1024px) {
                 text-align: center;
             }
+
+            @media (max-width: 640px) {
+                text-align: right;
+            }
         }
     }
 
@@ -48,6 +52,10 @@
         display: flex;
         justify-content: space-evenly;
         width: 19%;
+
+        @media (max-width: 640px) {
+            width: 100%;
+        }
 
         p {
             @media (max-width: 1024px) {

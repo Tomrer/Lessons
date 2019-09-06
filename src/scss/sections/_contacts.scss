@@ -18,6 +18,14 @@
             align-items: center;
         }
 
+        @media (max-width: 640px) {
+            padding: 0 60px;
+        }
+
+        @media (max-width: 320px) {
+            padding: 0;
+        }
+
         .flex-col {
             width: 50%;
             margin: 0 22px;
@@ -26,12 +34,20 @@
                 width: 100%;
                 padding-bottom: 50px;
             }
+
+            @media (max-width: 640px) {
+                padding-bottom: 25px;
+            }
         }
     }
 
     .map {
         height: 100%;
         padding-bottom: 55px;
+
+        @media (max-width: 320px) {
+            padding-bottom: 0;
+        }
 
         img {
             width: 100%;
