@@ -7,7 +7,7 @@
         flex-wrap: wrap;
         margin: 0 -11px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 640px) {
             flex-flow: column;
         }
     }
@@ -20,7 +20,7 @@
         margin-bottom: 22px;
         cursor: pointer;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 640px) {
             width: 100%;
         }
 
@@ -54,6 +54,10 @@
                 margin-bottom: 15px;
                 transition: padding .3s ease-out;
 
+                @media (max-width: 320px) {
+                    font-size: 16px;
+                }
+
                 span {
                     display: inline-block;
                     transition: transform .3s ease-out;
@@ -64,6 +68,10 @@
                 margin: 0 auto;
                 max-width: 330px;
                 line-height: 1.4em;
+
+                @media (max-width: 320px) {
+                    font-size: 12px;
+                }
             }
         }
 
@@ -81,7 +89,6 @@
                 @media (max-width: 1024px) {
                     max-width: 50%;
                 }
-
             }
 
             .plate__text {
@@ -93,6 +100,13 @@
 
                     span {
                         transform: translateX(-50%);
+                    }
+                }
+
+                p {
+                    
+                    @media (max-width: 320px) {
+                        text-align: center;
                     }
                 }
             }

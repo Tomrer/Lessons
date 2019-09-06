@@ -9,6 +9,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        @media (max-width: 320px) {
+            padding: 0 10px;
+        }
     }
 
     .logo {
@@ -21,10 +25,23 @@
             margin: 0;
             padding: 0;
 
+            @media (max-width: 320px) {
+                flex-flow: column;
+                text-align: right;
+            }
+
             li {
                 display: block;
                 list-style: none;
                 margin-right: 30px;
+
+                @media (max-width: 640px) {
+                    margin-right: 20px;
+                }
+
+                @media (max-width: 320px) {
+                    margin: 0 0 5px 0;
+                }
 
                 &:last-child {
                     margin-right: 0;

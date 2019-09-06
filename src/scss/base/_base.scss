@@ -10,6 +10,10 @@ body {
     max-width: 1280px;
     padding: 0 40px;
     margin: 0 auto;
+
+    @media (max-width: 320px) {
+        padding: 0 10px;
+    }
 }
 
 .flex {
@@ -37,6 +41,14 @@ body {
         width: 50%;
         margin: 0 auto;
 
+        @media (max-width: 640px) {
+            width: 90%;
+        }
+
+        @media (max-width: 320px) {
+            width: 100%;
+        }
+ 
         h2 {
             font-size: 36px;
             margin-top: 0;
@@ -45,6 +57,10 @@ body {
 
         p {
             font-size: 20px;
+
+        @media (max-width: 320px) {
+            font-size: 16px;
+        }
         }
     }
 }
@@ -52,9 +68,5 @@ body {
 input::placeholder,
 textarea::placeholder,
 select {
-    color: white;
-}
-
-.white-text {
     color: white;
 }
