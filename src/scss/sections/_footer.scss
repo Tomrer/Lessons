@@ -23,7 +23,15 @@
             }
 
             @media (max-width: 640px) {
-                text-align: right;
+                
+                ul {
+                    display: flex;
+                    flex-direction: row;
+    
+                        li {
+                            padding-right: 20px;
+                        } 
+                }
             }
         }
     }
