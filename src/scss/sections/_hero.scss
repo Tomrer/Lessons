@@ -1,12 +1,31 @@
 .hero {
-    display: flex;
-    align-items: center;
-    min-height: 800px;
-    background: url(../img/first_bg.png) center center no-repeat;
+    position: relative;
+    z-index: 0;
 
     .container {
         display: flex;
         justify-content: center;
+    }
+
+    &__slide {
+        height: 800px;
+        position: relative;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &>.container {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
     }
 
     h1 {
@@ -22,6 +41,90 @@
         text: {
             transform: uppercase;
             align: center;
+        }
+    }
+
+    .slick {
+
+        &-arrow {
+            display: block;
+            font-size: 0;
+            color: rgba(0, 0, 0, 0);
+            text-indent: -9999px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0;
+            margin: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background: white;
+            z-index: 1;
+
+            &:after {
+                color: black;
+                font-size: 30px;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 36px;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+        }
+
+        &-prev {
+            left: 15px;
+
+            &:after {
+                content: '\f060';
+            }
+        }
+
+        &-next {
+            right: 15px;
+            
+            &:after {
+                content: '\f061';
+            }
+        }
+
+        &-dots {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            z-index: 1;
+
+            li {
+                margin: 0 4px;
+
+                button {
+                    font-size: 0;
+                    color: rgba(0, 0, 0, 0);
+                    text-indent: -9999px;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: transparent;
+                    padding: 0;
+                    transition: background-color .9s ease-out;
+                }
+
+                &.slick-active {
+
+                    button {
+                        background-color: white;
+                    }
+                }
+            }
         }
     }
 }
