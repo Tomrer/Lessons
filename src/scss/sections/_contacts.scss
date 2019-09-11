@@ -18,6 +18,10 @@
             align-items: center;
         }
 
+        @media (max-width: 640px) {
+            padding: 0px;
+        }
+
         .flex-col {
             width: 50%;
             margin: 0 22px;
@@ -39,7 +43,14 @@
         }
 
         @media (max-width: 1024px) {
-            margin: 0 auto;
+            padding-bottom: 0px;    
+        }
+
+        iframe {
+
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
         }
     }
 
