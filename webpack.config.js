@@ -7,7 +7,8 @@ module.exports = {
 
     output: {
         path: path.resolve('dist'),
-        filename: 'js/bundle.js'
+        filename: 'js/bundle.js',
+        publicPath: '/dist/'
     },
 
     devtool: 'source-map',
@@ -37,6 +38,16 @@ module.exports = {
                         }
                     ]
                 })
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '../fonts/[name].[ext]',
+                        outputPath: 'fonts/'
+                    }
+                }]
             },
             {
                 test: /\.(jpeg|jpg|png|gif|svg)$/,

@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "webpack --mode development",
         "build": "webpack --mode production",
-        "watch": "webpack --mode development -w",
+        "watch": "webpack-dev-server --mode development --open",
         "clear": "del-cli dist"
     },
     "repository": {
@@ -38,9 +38,11 @@
         "sass-loader": "^7.2.0",
         "style-loader": "^1.0.0",
         "webpack": "^4.39.2",
-        "webpack-cli": "^3.3.6"
+        "webpack-cli": "^3.3.6",
+        "webpack-dev-server": "^3.8.0"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.10.2",
         "jquery": "3.4.1",
         "slick-carousel": "^1.8.1"
     }
