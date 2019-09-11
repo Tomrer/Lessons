@@ -45,12 +45,10 @@
     }
 
     .slick {
-
         &-arrow {
             display: block;
             font-size: 0;
             color: rgba(0, 0, 0, 0);
-            text-indent: -9999px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -65,13 +63,11 @@
 
             &:after {
                 color: black;
-                font-size: 30px;
+                font-size: 23px;
                 font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                width: 36px;
                 transform: translate(-50%, -50%);
                 z-index: 2;
             }
@@ -87,7 +83,7 @@
 
         &-next {
             right: 15px;
-            
+
             &:after {
                 content: '\f061';
             }
