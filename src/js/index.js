@@ -1,7 +1,11 @@
 import '../scss/main.scss';
 
 import $ from 'jquery';
+// eslint-disable-next-line no-unused-vars
+import slick from 'slick-carousel';
 
 $(document).ready(function () {
-    console.log('Hello world');
+    $('.hero').slick({
+        dots: true
+    });
 });
