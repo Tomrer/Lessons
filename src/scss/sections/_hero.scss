@@ -38,6 +38,10 @@
             font-size: 52px;
         }
 
+        @media (max-width: 320px) {
+            font-size: 35px;
+        }
+
         text: {
             transform: uppercase;
             align: center;
@@ -60,6 +64,11 @@
             border: none;
             background: white;
             z-index: 1;
+
+            @media (max-width: 320px) {
+                width: 30px;
+                height: 30px;
+            }
 
             &:after {
                 color: black;

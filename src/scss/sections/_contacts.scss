@@ -3,6 +3,10 @@
     background: url(../img/contact_bg.png) center center no-repeat;
     background-size: cover;
 
+    @media (max-width: 320px) {
+        background-position: center top;
+    }
+
 
     .section__header {
         color: white;
@@ -49,13 +53,17 @@
             padding-bottom: 0;
         }
 
-        img {
+        iframe {
             width: 100%;
-            object-fit: cover;
+            height: 100%;
+            display: block;
         }
 
         @media (max-width: 1024px) {
             margin: 0 auto;
+            width: 100%;
+            height: 400px;
+            padding: 0;
         }
     }
 

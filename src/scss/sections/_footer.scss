@@ -33,7 +33,23 @@
                         } 
                 }
             }
+
+            @media (max-width: 320px) {
+
+                ul {
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    li:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
         }
+    }
+
+    &-logo {
+        margin: 0 auto;
     }
 
     &-menu {
