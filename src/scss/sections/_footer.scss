@@ -48,8 +48,11 @@
         }
     }
 
-    &-logo {
-        margin: 0 auto;
+    @media (max-width: 320px) {
+
+        &-logo {
+            margin: 0 auto;
+        }
     }
 
     &-menu {
@@ -81,9 +84,19 @@
             width: 100%;
         }
 
-        p {
+        li {
             @media (max-width: 1024px) {
                 padding-right: 5px;
+            }
+
+            .fab {
+                font-size: 35px;
+                color: white;
+                transition: color .3s ease-in;
+
+                &:hover {
+                    color: $light-blue;
+                }
             }
         }
     }
