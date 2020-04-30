@@ -44,7 +44,7 @@
     "dependencies": {
         "@fancyapps/fancybox": "^3.5.7",
         "@fortawesome/fontawesome-free": "^5.10.2",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "slick-carousel": "^1.8.1"
     }
 }
